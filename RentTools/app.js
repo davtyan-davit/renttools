@@ -173,49 +173,49 @@ function closeModal() {
     document.getElementById("orderModal").style.display = "none"
 }
 
-async function sendMessage() {
-    document.getElementById("orderModal").style.display = "none"
+// async function sendMessage() {
+//     document.getElementById("orderModal").style.display = "none"
 
 
-    const botToken = '7624258849:AAEy_x0FoukGrnomDq5PDLEJ9cfqa6HM_2g';
-    const chatId = '5113185802';
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-    const name = document.getElementById("input_name").value
-    const phone = document.getElementById("phone").value
-    const id = document.getElementById("modalId").textContent;
+//     const botToken = '7624258849:AAEy_x0FoukGrnomDq5PDLEJ9cfqa6HM_2g';
+//     const chatId = '5113185802';
+//     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+//     const name = document.getElementById("input_name").value
+//     const phone = document.getElementById("phone").value
+//     const id = document.getElementById("modalId").textContent;
 
-    const message = `Նոր հաճախորդ
-Օրավարձ
+//     const message = `Նոր հաճախորդ
+// Օրավարձ
 
-Անուն Ազգանուն : ${name}, 
-Հեռախոսահամար  ։ ${phone},
-Ապրանքի ID: ${id}`;
+// Անուն Ազգանուն : ${name}, 
+// Հեռախոսահամար  ։ ${phone},
+// Ապրանքի ID: ${id}`;
 
   
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-                parse_mode: 'MarkdownV2'
-            })
-        });
+//     try {
+//         const response = await fetch(url, {
+//             method: 'POST',
+//             headers: {
+//             'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({
+//                 chat_id: chatId,
+//                 text: message,
+//                 parse_mode: 'MarkdownV2'
+//             })
+//         });
   
-        if (!response.ok) {
-          const errorDetail = await response.json();
-          throw new Error(`Failed to send message: ${errorDetail.description}`);
-        }
+//         if (!response.ok) {
+//           const errorDetail = await response.json();
+//           throw new Error(`Failed to send message: ${errorDetail.description}`);
+//         }
       
-        const data = await response.json();
-        console.log('Message sent:', data);
-    } catch (error) {
-      console.error('Error sending message:', error.message);
-    }
-}
+//         const data = await response.json();
+//         console.log('Message sent:', data);
+//     } catch (error) {
+//       console.error('Error sending message:', error.message);
+//     }
+// }
 
 function message() {
     alert("Մեր օպերատորը շուտով կկապնվի Ձեզ հետ առաքումը կազմակերպելու նպատակով։")
@@ -275,4 +275,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // document.addEventListener('dragstart', (event) => {
 //     event.preventDefault();
+
 // });
