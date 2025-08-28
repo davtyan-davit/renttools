@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #FEA501;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #17242A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 8vh;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    top: 0;
+    border-bottom: 1px solid #FEA501;
+}
+
+a {
+    text-decoration: none;
+}
+
+#name {
+    padding-top: 0.7%;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 10%;
+    color: #fff;
+}
+
+.fir_header {
+    width: 48%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-weight: bold;
+    height: 100%;
+}
+
+header div a {
+    color: #fff;
+    align-items: center;
+    width: auto;
+    padding: 8px 20px;
+    padding-top: 3%;
+    height: 8vh;
+}
+
+header div a:hover {
+    color: #FEA501;
+}
+
+main {
+    width: 100%;
+    margin-top: 3.8%;
+}
+
+section {
+    width: 100%;
+    padding: 3% 5%;
+    margin-bottom: 2%;
+}
+
+.main_name {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 300%;
+    margin-bottom: 2%;
+    margin-top: 7%;
+}
+
+p {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.tools_section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inner_div {
+    text-align: center;
+    background: #17242A;
+    padding: 3%;
+    border-radius: 18px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: -5%;
+    width: 30%;
+}
+
+.daily_renting {
+    margin-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #FEA501;
+    background-color: #17242A;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gif {
+    width: 10%;
+}
+
+#modalName {
+    line-height: 1;
+
+}
+
+.order_call {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #17242A;
+    background-color: #FEA501;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.modalBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modalContent {
+    display: flex;
+    width: 70%;
+    background-color: #FEA501;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.modalInfo {
+    width: 100%;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+#modalName {
+    font-size: 250%;
+    margin-bottom: 10%;
+}
+
+#modalPrice {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+.modalImg {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 12%;
+    left: 82.4%;
+    cursor: pointer;
+}
+
+.close:hover svg {
+    color: #17242A;
+}
+
+hr {
+    height: 0.5%;
+    background-color: #17242A;
+    border: 1px solid #17242A;
+}
+
+.modalInput {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+#submitOrder {
+    padding: 8px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #17242A;
+    color: #fff;
+    margin-top: 8%;
+    cursor: pointer;
+    border: 1px solid #17242A;
+    border-radius: 5px;
+}
+
+#sec_header {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #17242A;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+}
+
+@media screen and (max-width: 1415px) {
+    .fir_header {
+        width: 60%;
+    }
+
+    header div a {
+        padding-top: 2%;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .fir_header {
+        width: 75%;
+    }
+
+    header div a {
+        padding-top: 2%;
+    }
+}
+
+
+@media screen and (max-width: 973px) {
+    .fir_header {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        background: #17242A;
+        border: none;
+        color: #fff;
+        width: 30%;
+        cursor: pointer;
+    }
+
+    #sec_header {
+        z-index: 2;
+        position: fixed;
+        text-decoration: none;
+        color: #fff;
+        background-color: #17242A;
+        top: 8%;
+        left: 69.5%;
+        font-weight: bold;
+    }
+
+    #sec_header a {
+        padding: 8px 16px;
+        border-bottom: 1px solid #FEA501;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .tools_section {
+        display: grid;
+    }
+
+    .inner_div {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+    }
+
+    .main_name {
+        margin-top: 12%;
+    }
+
+    .modalImg {
+        width: 60%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #modalName {
+        font-size: 200%;
+        margin-bottom: 10%;
+    }
+
+    .modalContent {
+        display: grid;
+        width: 45%;
+        background-color: #FEA501;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2%;
+        border-radius: 20px;
+    }
+
+    .close {
+        position: absolute;
+        top: 4%;
+        left: 68.4%;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #sec_header {
+        left: 65.5%;
+    }
+
+    .inner_div {
+        width: 90%;
+    }
+
+    .main_name {
+        margin-top: 15%;
+        font-size: 200%;
+    }
+
+    .modalContent {
+        width: 75%;
+    }
+
+    #modalName {
+        font-size: 25px;
+    }
+
+    #modalPrice {
+        font-size: 25px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10%;
+        left: 79.4%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #FEA501;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #17242A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 8vh;
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    top: 0;
+    border-bottom: 1px solid #FEA501;
+}
+
+a {
+    text-decoration: none;
+}
+
+#name {
+    padding-top: 0.7%;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 10%;
+    color: #fff;
+}
+
+header div {
+    width: 48%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-weight: bold;
+    height: 100%;
+}
+
+header div a {
+    color: #fff;
+    align-items: center;
+    width: auto;
+    padding: 8px 20px;
+    padding-top: 3%;
+    height: 8vh;
+}
+
+header div a:hover {
+    color: #FEA501;
+}
+
+main {
+    width: 100%;
+    margin-top: 3.8%;
+}
+
+section {
+    width: 100%;
+    padding: 3% 5%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+p {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+}
+
+.first_sect p {
+    text-align: justify;
+}
+
+.main_name {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 300%;
+}
+
+.names {
+    margin-bottom: -5%;
+    font-size: 250%;
+}
+
+.names2 {
+    margin-bottom: 5%;
+}
+
+.first_sect {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_sect div {
+    width: 45%;
+}
+
+.purpose_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #17242A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 35vh;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+  
+.card p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+  
+.purpose_cards .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#sec_header {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #17242A;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+}
+
+@media screen and (max-width: 1415px) {
+    .fir_header {
+        width: 60%;
+    }
+
+    header div a {
+        padding-top: 2%;
+    }
+
+}
+
+@media screen and (max-width: 1182px) {
+    .fir_header {
+        width: 75%;
+    }
+
+    header div a {
+        padding-top: 2%;
+    }
+
+    .first_sect {
+        display: grid;
+    }
+
+    .first_sect div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: 70%;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .purpose_cards {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 973px) {
+    .fir_header {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        background: #17242A;
+        border: none;
+        color: #fff;
+        width: 30%;
+        cursor: pointer;
+    }
+
+    #sec_header {
+        z-index: 2;
+        position: fixed;
+        text-decoration: none;
+        color: #fff;
+        background-color: #17242A;
+        top: 8%;
+        left: 69.5%;
+        font-weight: bold;
+    }
+
+    #sec_header a {
+        padding: 8px 16px;
+        border-bottom: 1px solid #FEA501;
+    }
+
+    a {
+        color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    #sec_header {
+        left: 65.5%;
+    }
+
+    .main_name {
+        margin-top: 20%;
+        font-size: 250%;
+    }
+
+    .names {
+        font-size: 200%;
+    }
+    
+    .first_sect div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 85%;
+    }
+
+    .card h2 {
+        font-size: 23px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .first_sect div {
+        width: 100%;
+    }
+}

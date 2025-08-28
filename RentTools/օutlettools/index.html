@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentTools</title>
+    <script src="./app.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html" id="name">RentTools</a>
+        <div class="fir_header">
+            <a href="../first/index.html">Օրավարձով գործիքներ</a>
+            <a href="./index.html">Գործիքների Outlet Խանութ</a>
+            <a href="./first/index.html">Վաճառվող գործիքներ</a>
+        </div>
+        <button id="menu"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+    </header>
+    <div id="sec_header">
+        <a href="../first/index.html">Օրավարձով գործիքներ</a>
+        <a href="./index.html">Գործիքների Outlet Խանութ</a>
+        <a href="./first/index.html">Վաճառվող գործիքներ</a>
+    </div>
+    <main>
+        <section id="second_sect">
+            <h1 id="head_name">Գործիքների Outlet Խանութ</h1>
+            <br><br><br><br>
+            <p class="tool_name">Վաճառվող գործիքներ</p>
+        </section>
+        <section class="more">
+            <a href="./first/index.html">Տեսնել ավելին</a>
+        </section>
+        <section id="third_sect">
+            <p class="renting_name">Վաճառք</p>
+            <div class="renting_description">
+                <p>OutletTools ՝ Գործիքներ մատչելի գնով:</p> <br>
+                <p>OutletTools-ը հնարավորություն է տալիս ձեռք բերել որակյալ գործիքներ մատչելի գնով: Մեր նպատակն է ապահովել գործիքների վաճառքը յուրաքանչյուրի համար հասանելի գնով՝ առանց որակի վրա զիջումների: </p> <br>
+                <p>Մենք առաջարկում ենք գործիքների լայն տեսականի, որոնք կօգնեն ձեզ ` կատարել ցանկացած աշխատանք լինի դա տան վերանորոգում, շինարարություն թե ձեր բիզնեսի կարիքները:</p> <br>
+                <p>Մենք վստահ ենք, որ OutletTools-ը ձեր գործիքների խելացի ընտրությունն է:</p> <br>
+                <p>Ընտրեք մեր հարմարավետ և արագ ծառայությունները, խնայեք գումար ու ժամանակ, և սկսեք ձեր նախագիծը հենց այսօր:</p>
+            </div>
+        </section>
+    </main>
+    <div id="orderModal" class="modalBack" style="display: none;">
+        <a class="close" onclick="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </a>
+        <div class="modalContent">
+            <img id="modalImage" src="" alt="Selected Tool" class="modalImg">
+            <div class="modalInfo">
+                <p id="modalName" class="modal-name"></p>
+                <p id="modalPrice"></p>
+                <hr><br>
+                <p style="font-size: 160%;">Պատվիրել հիմա ՝</p><br>
+                <form action="" id="orderForm">
+                    <input id="input_name" required type="text" placeholder="Ձեր Անուն Ազգանունը" class="modalInput" required><br>
+                    <input id="phone" required type="text" placeholder="Ձեր հեռախոսահամարը" class="modalInput" required><br>
+                    <button id="submitOrder" type="submit">Պատվիրել</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 RentTools</p>
+        <p>Developed by Davit Davtyan</p>
+    </footer>
+</body>
+</html>
